@@ -1,0 +1,48 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Live Emotion Detection</title>
+</head>
+<body>
+    <h1>Live Emotion Detection</h1>
+    <img src="{{ url_for('video_feed') }}" width="50%">
+    
+    <h3 id="result"></h3>
+
+    <script>
+        // Auto navigate to get_advice page after 5 seconds
+        setTimeout(() => {
+            window.location.href = "/get_advice"; 
+        }, 5000);
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Emotion Detection</title>
+    <style>
+        body {
+            background-color: #111827;
+            color: #d1d5db;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h1, h3 {
+            color: #d1d5db;
+        }
+    </style>
+</head>
+<body>
+    <h1>Live Emotion Detection</h1>
+    <img src="{{ url_for('video_feed') }}" width="50%">
+    
+    <h3 id="result"></h3>
+
+    <script>
+        setTimeout(() => {
+            window.location.href = "/get_advice"; 
+        }, 5000);
+    </script>
+</body>
+</html>
